@@ -43,16 +43,6 @@ fn main() {
 
     println!("Nearest ID: {}", result[0].id);
 }
-
-fn gen_vector<const N: usize>() -> Vector<N> {
-    let mut vec = [0.0; N];
-
-    for float in vec.iter_mut() {
-        *float = random::<f32>();
-    }
-
-    Vector(vec)
-}
 ```
 
 # 🏁 Benchmarks
